@@ -41,9 +41,7 @@
 	{{- else }}
 		{{ $server = .Site.IsServer }}
 	{{- end -}}
-	{{- if not $server }}
-		{{ template "_internal/google_analytics.html" . }}
-	{{- end }}
+	{{ template "_internal/google_analytics.html" . }}
 </head>
 <body class="body">
 	<div class="container container--outer">
